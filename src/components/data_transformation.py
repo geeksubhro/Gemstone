@@ -57,9 +57,9 @@ class DataTransformation:
             ('cat_pipeline',cat_pipeline,categorical_cols)
             ])
             
+            logging.info('Pipeline Completed')
             return preprocessor
 
-            logging.info('Pipeline Completed')
 
         except Exception as e:
             logging.info("Error in Data Trnasformation")
